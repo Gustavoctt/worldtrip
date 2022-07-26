@@ -1,6 +1,8 @@
-import { Box, Flex, Grid, GridItem, Heading, Icon, IconButton, Image, Text } from "@chakra-ui/react";
+import { Box, Flex, Grid, Heading, Text } from "@chakra-ui/react";
+
 import { Banner } from "../components/Banner";
 import { Header } from "../components/Header";
+import { Slider } from "../components/Slider";
 import { TravelTypes } from "../components/TravelTypes";
 
 export default function Home() {
@@ -27,6 +29,17 @@ export default function Home() {
       </Grid>
 
       <Box bg="gray.900"  mx="auto" my="20" w="90px"  h="2" />
+
+      <Heading
+        textAlign="center"
+        fontWeight="medium"
+        color="gray.900"
+      >
+        Vamos nessa? <br/>
+        Então escolha seu continente
+      </Heading>
+    
+      <Slider />
     
    </>
   )
