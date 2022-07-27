@@ -13,12 +13,14 @@ export default function Home() {
 
       <Grid 
         mt={["10", "36"]} 
-        templateColumns='repeat(5, 1fr)' 
+        templateColumns={["1fr 1fr", "1fr 1fr", "1fr 1fr", 'repeat(5, 1fr)']} 
         gap={[2, 5]} 
         px="16"
         mx="auto"
         maxWidth={1410}
         flexWrap="wrap"
+        justifyContent="space-between"
+        alignItems="center"
         >
         
         <TravelTypes  image="/icons/drink.svg" title="vida noturna" />
